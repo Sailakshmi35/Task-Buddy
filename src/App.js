@@ -4,7 +4,7 @@ import './Style.css';
 import TaskList from "./components/TaskList";
 import ProgressTracker from "./components/ProgressTracker";
 
-export default function App(){
+
 function App() {
   const [tasks, setTasks] = useState([]);
 
@@ -30,9 +30,6 @@ function App() {
     setTasks([]);
   };
   return (
-    <div>
-    <h1>TaskBuddy</h1>
-    <TaskForm />
     <div className='App'>
       <header class="header">
   <div class="header-container">
@@ -57,9 +54,7 @@ function App() {
        )}
 
     </div>
-    
-</div>
+  );
 }
-);
-}
+
 export default App;
